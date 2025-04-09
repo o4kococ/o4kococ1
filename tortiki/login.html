@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Основной контент страницы -->
+    <div class="container">
+        <!-- Блок с кнопками навигации внутри формы -->
+        <div class="form-navigation">
+            <a href="register.html" class="nav-button">Регистрация</a>
+            <a href="login.html" class="nav-button">Авторизация</a>
+        </div>
+
+        <h1>Авторизация</h1>
+        <form action="login.php" method="post">
+            <label for="username">Имя пользователя:</label><br>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">Пароль:</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+</body>
+</html>

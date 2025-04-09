@@ -1,0 +1,127 @@
+/* Общие стили */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Стили для навигационной панели */
+.navbar {
+    background-color: #E74C3C; /* Цвет фона панели */
+    padding: 10px 20px; /* Внутренние отступы */
+    position: fixed; /* Фиксированное положение вверху страницы */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ширина на всю страницу */
+    z-index: 1000; /* Чтобы панель была поверх других элементов */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center; /* Кнопки по центру */
+    align-items: center; /* Выравнивание по центру по вертикали */
+}
+
+/* Стили для кнопок в навигационной панели */
+.nav-button {
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 16px;
+    padding: 8px 15px; /* Внутренние отступы */
+    border-radius: 5px; /* Закругление углов */
+    transition: background-color 0.3s ease; /* Анимация при наведении */
+}
+
+.nav-button:hover {
+    background-color: #C0392B; /* Цвет фона при наведении */
+}
+
+/* Стили для разделителей */
+.divider {
+    width: 1px; /* Ширина линии */
+    height: 20px; /* Высота линии */
+    background-color: white; /* Цвет линии */
+    margin: 0 10px; /* Отступы слева и справа */
+}
+
+/* Стили для контейнера основного контента */
+.container {
+    width: 900px;
+    max-width: 90%;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(186, 63, 63, 0.1);
+    margin-top: 80px; /* Отступ сверху, чтобы контент не перекрывался панелью */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Стили для блока с тортами */
+.cakes-container {
+    display: flex;
+    flex-wrap: wrap; /* Перенос блоков на новую строку при необходимости */
+    gap: 20px; /* Отступ между блоками */
+    justify-content: center; /* Выравнивание по центру */
+    margin-top: 30px; /* Отступ сверху */
+}
+
+/* Стили для карточки торта */
+.cake-card {
+    width: 200px; /* Ширина карточки */
+    background-color: #f9f9f9; /* Фон карточки */
+    border: 1px solid #ddd; /* Граница карточки */
+    border-radius: 10px; /* Закругление углов */
+    padding: 15px; /* Внутренние отступы */
+    text-align: center; /* Выравнивание текста по центру */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
+}
+
+.cake-card:hover {
+    transform: translateY(-5px); /* Поднятие карточки при наведении */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Усиленная тень */
+}
+
+/* Стили для изображений тортов */
+.cake-card img {
+    width: 100%; /* Изображение занимает всю ширину карточки */
+    height: auto; /* Сохранение пропорций */
+    border-radius: 10px; /* Закругление углов изображения */
+}
+
+/* Стили для заголовка торта */
+.cake-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+/* Стили для цены */
+.cake-card .price {
+    font-size: 16px;
+    color: #E74C3C; /* Цвет цены */
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Стили для описания */
+.cake-card .description {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
